@@ -28,8 +28,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohitagw15856/pm-claude-skills.git",
-    "directory": "skillspec"
+    "url": "git+https://github.com/mohitagw15856/skillspec.git"
   },
-  "homepage": "https://github.com/mohitagw15856/pm-claude-skills/blob/main/SKILLSPEC.md"
+  "homepage": "https://github.com/mohitagw15856/skillspec/blob/main/SKILLSPEC.md"
 }
