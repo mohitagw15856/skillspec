@@ -14,4 +14,4 @@ Verifiability principles — an open validator and published grading methods —
 ## Adopters (grows by PR — add yourself)
 | Project | What it uses |
 |---|---|
-| [pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) | Full: 466 skills at L3, CI gate, badge, census grading |
+| [pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) | Full: 496 skills at L3, CI gate, badge, census grading |

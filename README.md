@@ -55,4 +55,4 @@ Changes to conformance levels, security patterns, or the schema land as RFCs wit
 
 ## Adopters
 
-Add yourself by PR to [GOVERNANCE.md](GOVERNANCE.md). Largest implementation: [pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) — 466 skills held at L3 by a CI gate.
+Add yourself by PR to [GOVERNANCE.md](GOVERNANCE.md). Largest implementation: [pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) — 496 skills held at L3 by a CI gate.
