@@ -49,6 +49,19 @@ A live-graded shield for any public repo — the badge service fetches your SKIL
 ![SkillSpec](https://img.shields.io/endpoint?url=https%3A%2F%2Fpm-skills-mcp.pm-claude-skills.workers.dev%2Fbadge%3Frepo%3DYOURUSER%2FYOURREPO)
 ```
 
+## For OpenClaw skill authors
+
+OpenClaw reads the same `SKILL.md` standard this spec formalizes, and its dialect is compatible: a skill carrying OpenClaw's `homepage`, `user-invocable`, or `metadata.openclaw` block (emoji, requires, os gating) validates cleanly — the `metadata` object is reserved in the spec precisely for runtime extensions, and [RFC-0003](docs/rfcs/0003-runtime-specific-frontmatter.md) formalizes tolerance for the top-level keys.
+
+Why lint before you publish to ClawHub: the registry is open by design, which is exactly why hidden-instruction and exfiltration-pattern skills have shown up there. `skillspec-check` runs the same security scan a 496-skill curated library gates its CI on — prompt-injection phrasing, unvetted network calls, data-exfiltration instructions, embedded credentials — plus the conformance grade:
+
+```bash
+npx skillspec-check my-skill/          # lint one skill before clawhub publish
+npx skillspec-check ~/.openclaw/skills # audit everything you've installed
+```
+
+Add the badge to your skill repo so installers can see the grade before they trust you (see **The badge** above).
+
 ## Governance
 
 Changes to conformance levels, security patterns, or the schema land as RFCs with a 14-day comment window ([template](docs/rfcs/0000-template.md)). Maintainership is earned by adoption — the two largest non-fork adopters found by each quarterly census hold standing invitations. See [GOVERNANCE.md](GOVERNANCE.md), and [RFC-0001](docs/rfcs/0001-skillspec-1.0-as-is.md), which ratifies SkillSpec 1.0 as-is.
