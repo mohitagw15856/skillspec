@@ -1,6 +1,6 @@
 {
   "name": "skillspec-check",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "The eslint for SKILL.md \u2014 validate any repo's Agent Skills against SkillSpec: conformance levels (L1 Loadable \u2192 L3 Trustworthy) plus a security-pattern scan. Zero dependencies.",
   "type": "module",
   "bin": {

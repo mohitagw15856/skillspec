@@ -69,3 +69,12 @@ Changes to conformance levels, security patterns, or the schema land as RFCs wit
 ## Adopters
 
 Add yourself by PR to [GOVERNANCE.md](GOVERNANCE.md). Largest implementation: [pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) — 496 skills held at L3 by a CI gate.
+
+## Fix mode & advisories (v1.1)
+
+```bash
+npx skillspec-check fix skills/ --dry-run   # scaffold missing L2/L3 sections (TODOs, never invented judgment)
+npx skillspec-check --advisories https://mohitagw15856.github.io/pm-claude-skills/advisories.json
+```
+
+`fix` makes a repo structurally conformant and leaves TODO warnings where a human must write the actual judgment. The advisories feed is a CVE-style pattern list published after releases — new attack patterns found in open registries land there before they land in a spec revision.
